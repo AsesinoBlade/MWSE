@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../dofile/" class="md-tabs__link md-tabs__link--active">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1183,6 +1195,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -1262,6 +1286,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../include/" class="md-nav__link">
+        include
+      </a>
     </li>
   
 
@@ -1507,6 +1543,18 @@
     <li class="md-nav__item">
       <a href="../../types/lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2537,6 +2585,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -3029,6 +3089,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3223,6 +3295,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3439,6 +3523,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -4859,6 +4955,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5177,7 +5285,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>eventId</code> (string)</li>
-<li><code>options</code> (table)</li>
+<li><code>options</code> (table): <em>Optional</em>.</li>
 </ul>
 <hr />
 <h3 id="eventregister"><code>event.register</code><a class="headerlink" href="#eventregister" title="Permanent link">⚓︎</a></h3>
@@ -5188,7 +5296,7 @@
 <ul>
 <li><code>eventId</code> (string)</li>
 <li><code>callback</code> (function)</li>
-<li><code>options</code> (table)</li>
+<li><code>options</code> (table): <em>Optional</em>.</li>
 </ul>
 <hr />
 <h3 id="eventtrigger"><code>event.trigger</code><a class="headerlink" href="#eventtrigger" title="Permanent link">⚓︎</a></h3>
@@ -5198,8 +5306,8 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>eventId</code> (string)</li>
-<li><code>payload</code> (table)</li>
-<li><code>options</code> (table)</li>
+<li><code>payload</code> (table): <em>Optional</em>.</li>
+<li><code>options</code> (table): <em>Optional</em>.</li>
 </ul>
 <hr />
 <h3 id="eventunregister"><code>event.unregister</code><a class="headerlink" href="#eventunregister" title="Permanent link">⚓︎</a></h3>
@@ -5210,7 +5318,7 @@
 <ul>
 <li><code>eventId</code> (string)</li>
 <li><code>callback</code> (function)</li>
-<li><code>options</code> (table)</li>
+<li><code>options</code> (table): <em>Optional</em>.</li>
 </ul>
 <hr />
                 
@@ -5237,7 +5345,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../references/mwse-mwscript/utility/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Utility Functions" rel="prev">
+        <a href="../dofile/" class="md-footer__link md-footer__link--prev" aria-label="Previous: dofile" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -5246,20 +5354,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Utility Functions
+              dofile
             </div>
           </div>
         </a>
       
       
         
-        <a href="../json/" class="md-footer__link md-footer__link--next" aria-label="Next: json" rel="next">
+        <a href="../include/" class="md-footer__link md-footer__link--next" aria-label="Next: include" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              json
+              include
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -5288,10 +5396,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>

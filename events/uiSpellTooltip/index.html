@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -246,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../apis/event/" class="md-tabs__link">
+      <a href="../../apis/dofile/" class="md-tabs__link">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1183,8 +1195,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../../apis/dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../apis/event/" class="md-nav__link">
         event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apis/include/" class="md-nav__link">
+        include
       </a>
     </li>
   
@@ -1431,6 +1467,18 @@
     <li class="md-nav__item">
       <a href="../../types/lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2461,6 +2509,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -2953,6 +3013,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3147,6 +3219,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3363,6 +3447,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -4785,6 +4881,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5106,10 +5214,14 @@
 <span class="kr">end</span>
 <span class="n">event</span><span class="p">.</span><span class="n">register</span><span class="p">(</span><span class="s2">&quot;uiSpellTooltip&quot;</span><span class="p">,</span> <span class="n">uiSpellTooltipCallback</span><span class="p">)</span>
 </code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>An event can be claimed by setting <code>e.claim</code> to <code>true</code>, or by returning <code>false</code> from the callback. Claiming the event prevents any lower priority callbacks from being called.</p>
+</div>
 <h2 id="event-data">Event Data<a class="headerlink" href="#event-data" title="Permanent link">⚓︎</a></h2>
 <ul>
-<li><code>tooltip</code> (<a href="../../types/tes3uiElement">tes3uiElement</a>): The newly created tooltip element. Due to timeouts and target changes, it may be destroyed at any time.</li>
-<li><code>spell</code> (<a href="../../types/tes3spell">tes3spell</a>): The spell being examined.</li>
+<li><code>spell</code> (<a href="../../types/tes3spell">tes3spell</a>): <em>Read-only</em>. The spell being examined.</li>
+<li><code>tooltip</code> (<a href="../../types/tes3uiElement">tes3uiElement</a>): <em>Read-only</em>. The newly created tooltip element. Due to timeouts and target changes, it may be destroyed at any time.</li>
 </ul>
                 
               
@@ -5186,10 +5298,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>

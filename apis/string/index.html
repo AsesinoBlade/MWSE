@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../event/" class="md-tabs__link md-tabs__link--active">
+      <a href="../dofile/" class="md-tabs__link md-tabs__link--active">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1185,8 +1197,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../event/" class="md-nav__link">
         event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../include/" class="md-nav__link">
+        include
       </a>
     </li>
   
@@ -1398,8 +1434,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#stringsplit" class="md-nav__link">
+    string.split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#stringstartswith" class="md-nav__link">
     string.startswith
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stringtrim" class="md-nav__link">
+    string.trim
   </a>
   
 </li>
@@ -1514,6 +1564,18 @@
     <li class="md-nav__item">
       <a href="../../types/lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2544,6 +2606,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -3036,6 +3110,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3230,6 +3316,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3446,6 +3544,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -4866,6 +4976,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5157,8 +5279,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#stringsplit" class="md-nav__link">
+    string.split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#stringstartswith" class="md-nav__link">
     string.startswith
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stringtrim" class="md-nav__link">
+    string.trim
   </a>
   
 </li>
@@ -5199,13 +5335,119 @@
 </ul>
 <hr />
 <h3 id="stringformat"><code>string.format</code><a class="headerlink" href="#stringformat" title="Permanent link">⚓︎</a></h3>
-<p>This function creates a string, given various values. The format follows the printf format, with the additional option of %q to automatically quote a string.</p>
+<p>This function creates a string, given various values. The first parameter follows the <a href="http://www.cplusplus.com/reference/cstdio/printf">printf</a> format, with the additional option of <code>%q</code> to automatically quote a string.</p>
+<table>
+<thead>
+<tr>
+<th>Specifier</th>
+<th>Output</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>%d</code></td>
+<td>Signed decimal integer.</td>
+<td>-392</td>
+</tr>
+<tr>
+<td><code>%i</code></td>
+<td>Same as <code>%d</code>.</td>
+<td>-392</td>
+</tr>
+<tr>
+<td><code>%u</code></td>
+<td>Unsigned decimal integer.</td>
+<td>7235</td>
+</tr>
+<tr>
+<td><code>%o</code></td>
+<td>Unsigned octal.</td>
+<td>610</td>
+</tr>
+<tr>
+<td><code>%x</code></td>
+<td>Unsigned hexadecimal integer.</td>
+<td>7fa</td>
+</tr>
+<tr>
+<td><code>%X</code></td>
+<td>As <code>%x</code>, but uppercase.</td>
+<td>7FA</td>
+</tr>
+<tr>
+<td><code>%f</code></td>
+<td>Decimal floating point, lowercase.</td>
+<td>392.65</td>
+</tr>
+<tr>
+<td><code>%F</code></td>
+<td>Decimal floating point, uppercase.</td>
+<td>392.65</td>
+</tr>
+<tr>
+<td><code>%e</code></td>
+<td>Scientific notation (mantissa/exponent), lowercase.</td>
+<td>3.9265e+2</td>
+</tr>
+<tr>
+<td><code>%E</code></td>
+<td>Scientific notation (mantissa/exponent), uppercase.</td>
+<td>3.9265E+2</td>
+</tr>
+<tr>
+<td><code>%g</code></td>
+<td>Use the shortest representation: %e or %f.</td>
+<td>392.65</td>
+</tr>
+<tr>
+<td><code>%G</code></td>
+<td>Use the shortest representation: %E or %F.</td>
+<td>392.65</td>
+</tr>
+<tr>
+<td><code>%a</code></td>
+<td>Hexadecimal floating point, lowercase.</td>
+<td>-0xc.90fep-2</td>
+</tr>
+<tr>
+<td><code>%A</code></td>
+<td>Hexadecimal floating point, uppercase.</td>
+<td>-0XC.90FEP-2</td>
+</tr>
+<tr>
+<td><code>%c</code></td>
+<td>Character.</td>
+<td>a</td>
+</tr>
+<tr>
+<td><code>%s</code></td>
+<td>String of characters.</td>
+<td>sample</td>
+</tr>
+<tr>
+<td><code>%q</code></td>
+<td>Quoted string of characters.</td>
+<td>"sample"</td>
+</tr>
+<tr>
+<td><code>%p</code></td>
+<td>Pointer address.</td>
+<td>b8000000</td>
+</tr>
+<tr>
+<td><code>%%</code></td>
+<td>The literal <code>%</code> character.</td>
+<td>%</td>
+</tr>
+</tbody>
+</table>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">result</span> <span class="o">=</span> <span class="nb">string.format</span><span class="p">(</span><span class="n">format</span><span class="p">,</span> <span class="n">unknown</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>format</code> (string): The format string to use for the output.</li>
-<li><code>unnamed</code> (values): Values to format into the given string.</li>
+<li><code>unnamed</code> (values): <em>Optional</em>. Values to format into the given string.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5236,8 +5478,22 @@
 <ul>
 <li><code>s</code> (string): The string to perform finds on.</li>
 <li><code>pattern</code> (table): An array-style table that contains pattern strings.</li>
-<li><code>index</code> (number): Start index of the find.</li>
+<li><code>index</code> (number): <em>Default</em>: <code>1</code>. Start index of the find.</li>
 <li><code>plain</code> (boolean): If true, a normal search instead of a pattern search will be performed.</li>
+</ul>
+<hr />
+<h3 id="stringsplit"><code>string.split</code><a class="headerlink" href="#stringsplit" title="Permanent link">⚓︎</a></h3>
+<p>Returns an array-style table with <code>str</code> split by <code>sep</code>. The <code>sep</code>erator is not part of the results. By default the <code>sep</code>erator is <code>%s</code>, splitting the given <code>str</code>ing by spaces.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">split</span> <span class="o">=</span> <span class="n">string</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">sep</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><code>str</code> (string): The string to split.</li>
+<li><code>sep</code> (string): <em>Default</em>: <code>"%s"</code>. The token to split the string by.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>split</code> (table)</li>
 </ul>
 <hr />
 <h3 id="stringstartswith"><code>string.startswith</code><a class="headerlink" href="#stringstartswith" title="Permanent link">⚓︎</a></h3>
@@ -5252,6 +5508,19 @@
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (boolean)</li>
+</ul>
+<hr />
+<h3 id="stringtrim"><code>string.trim</code><a class="headerlink" href="#stringtrim" title="Permanent link">⚓︎</a></h3>
+<p>Returns a copy of the string, with whitespace removed from the start and end.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">trimmed</span> <span class="o">=</span> <span class="n">string</span><span class="p">.</span><span class="n">trim</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><code>s</code> (string)</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>trimmed</code> (string)</li>
 </ul>
 <hr />
                 
@@ -5329,10 +5598,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>

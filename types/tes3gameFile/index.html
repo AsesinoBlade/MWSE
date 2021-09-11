@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -246,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../apis/event/" class="md-tabs__link">
+      <a href="../../apis/dofile/" class="md-tabs__link">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1183,8 +1195,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../../apis/dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../apis/event/" class="md-nav__link">
         event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apis/include/" class="md-nav__link">
+        include
       </a>
     </li>
   
@@ -1433,6 +1469,18 @@
     <li class="md-nav__item">
       <a href="../lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2648,6 +2696,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -3140,6 +3200,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3334,6 +3406,18 @@
     <li class="md-nav__item">
       <a href="../tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3550,6 +3634,18 @@
     <li class="md-nav__item">
       <a href="../tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -4970,6 +5066,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5393,119 +5501,119 @@
 <p>Represents a loaded ESM, ESP, or ESS file.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">⚓︎</a></h2>
 <h3 id="author"><code>author</code><a class="headerlink" href="#author" title="Permanent link">⚓︎</a></h3>
-<p>The file's author.</p>
+<p><em>Read-only</em>. The file's author.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (string)</li>
 </ul>
 <hr />
 <h3 id="cellname"><code>cellName</code><a class="headerlink" href="#cellname" title="Permanent link">⚓︎</a></h3>
-<p>The current cell, from a save game.</p>
+<p><em>Read-only</em>. The current cell, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (string)</li>
 </ul>
 <hr />
 <h3 id="currenthealth"><code>currentHealth</code><a class="headerlink" href="#currenthealth" title="Permanent link">⚓︎</a></h3>
-<p>The player's health, from a save game.</p>
+<p><em>Read-only</em>. The player's health, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="day"><code>day</code><a class="headerlink" href="#day" title="Permanent link">⚓︎</a></h3>
-<p>The current day, from a save game.</p>
+<p><em>Read-only</em>. The current day, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="dayspassed"><code>daysPassed</code><a class="headerlink" href="#dayspassed" title="Permanent link">⚓︎</a></h3>
-<p>The number of days passed, from a save game.</p>
+<p><em>Read-only</em>. The number of days passed, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="description"><code>description</code><a class="headerlink" href="#description" title="Permanent link">⚓︎</a></h3>
-<p>The description of the file.</p>
+<p><em>Read-only</em>. The description of the file.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (string)</li>
 </ul>
 <hr />
 <h3 id="filename"><code>filename</code><a class="headerlink" href="#filename" title="Permanent link">⚓︎</a></h3>
-<p>The simple filename.</p>
+<p><em>Read-only</em>. The simple filename.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (string)</li>
 </ul>
 <hr />
 <h3 id="filesize"><code>fileSize</code><a class="headerlink" href="#filesize" title="Permanent link">⚓︎</a></h3>
-<p>The size of the file.</p>
+<p><em>Read-only</em>. The size of the file.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="gamehour"><code>gameHour</code><a class="headerlink" href="#gamehour" title="Permanent link">⚓︎</a></h3>
-<p>The current game hour, from a save game.</p>
+<p><em>Read-only</em>. The current game hour, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="highestformid"><code>highestFormID</code><a class="headerlink" href="#highestformid" title="Permanent link">⚓︎</a></h3>
-<p>No description yet available.</p>
+<p><em>Read-only</em>. No description yet available.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="masters"><code>masters</code><a class="headerlink" href="#masters" title="Permanent link">⚓︎</a></h3>
-<p>An array-style table of the tes3gameFiles that this is dependent upon.</p>
+<p><em>Read-only</em>. An array-style table of the tes3gameFiles that this is dependent upon.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (table)</li>
 </ul>
 <hr />
 <h3 id="maxhealth"><code>maxHealth</code><a class="headerlink" href="#maxhealth" title="Permanent link">⚓︎</a></h3>
-<p>The player's maximum health, from a save game.</p>
+<p><em>Read-only</em>. The player's maximum health, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="modifiedtime"><code>modifiedTime</code><a class="headerlink" href="#modifiedtime" title="Permanent link">⚓︎</a></h3>
-<p>The timestamp that the file was modified.</p>
+<p><em>Read-only</em>. The timestamp that the file was modified.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (string)</li>
 </ul>
 <hr />
 <h3 id="month"><code>month</code><a class="headerlink" href="#month" title="Permanent link">⚓︎</a></h3>
-<p>The current month, from a save game.</p>
+<p><em>Read-only</em>. The current month, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="path"><code>path</code><a class="headerlink" href="#path" title="Permanent link">⚓︎</a></h3>
-<p>The path to the file.</p>
+<p><em>Read-only</em>. The path to the file.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (string)</li>
 </ul>
 <hr />
 <h3 id="playername"><code>playerName</code><a class="headerlink" href="#playername" title="Permanent link">⚓︎</a></h3>
-<p>The player's name, from a save game.</p>
+<p><em>Read-only</em>. The player's name, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (string)</li>
 </ul>
 <hr />
 <h3 id="year"><code>year</code><a class="headerlink" href="#year" title="Permanent link">⚓︎</a></h3>
-<p>The current year, from a save game.</p>
+<p><em>Read-only</em>. The current year, from a save game.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
@@ -5592,10 +5700,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>

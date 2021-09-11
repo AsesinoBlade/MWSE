@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../event/" class="md-tabs__link md-tabs__link--active">
+      <a href="../dofile/" class="md-tabs__link md-tabs__link--active">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1185,8 +1197,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../event/" class="md-nav__link">
         event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../include/" class="md-nav__link">
+        include
       </a>
     </li>
   
@@ -1445,6 +1481,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#tableinvert" class="md-nav__link">
+    table.invert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#tablekeys" class="md-nav__link">
     table.keys
   </a>
@@ -1584,6 +1627,18 @@
     <li class="md-nav__item">
       <a href="../../types/lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2614,6 +2669,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -3106,6 +3173,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3300,6 +3379,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3516,6 +3607,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -4936,6 +5039,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5262,6 +5377,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#tableinvert" class="md-nav__link">
+    table.invert
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#tablekeys" class="md-nav__link">
     table.keys
   </a>
@@ -5333,7 +5455,7 @@
 <ul>
 <li><code>t</code> (table)</li>
 <li><code>value</code> (unknown)</li>
-<li><code>comp</code> (unknown)</li>
+<li><code>comp</code> (unknown): <em>Optional</em>.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5352,8 +5474,8 @@
 <ul>
 <li><code>t</code> (table)</li>
 <li><code>value</code> (unknown)</li>
-<li><code>compval</code> (unknown)</li>
-<li><code>reversed</code> (unknown)</li>
+<li><code>compval</code> (unknown): <em>Optional</em>.</li>
+<li><code>reversed</code> (unknown): <em>Optional</em>.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5390,7 +5512,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>from</code> (table)</li>
-<li><code>to</code> (table)</li>
+<li><code>to</code> (table): <em>Optional</em>.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5447,6 +5569,19 @@
 <li><code>result</code> (unknown)</li>
 </ul>
 <hr />
+<h3 id="tableinvert"><code>table.invert</code><a class="headerlink" href="#tableinvert" title="Permanent link">⚓︎</a></h3>
+<p>Returns a copy of <code>t</code> with the keys and values flipped.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">result</span> <span class="o">=</span> <span class="n">table</span><span class="p">.</span><span class="n">invert</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><code>t</code> (table)</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>result</code> (table)</li>
+</ul>
+<hr />
 <h3 id="tablekeys"><code>table.keys</code><a class="headerlink" href="#tablekeys" title="Permanent link">⚓︎</a></h3>
 <p>Returns an array-style table of all keys in the given table, t. Optionally, it will sort the returned table.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">keys</span> <span class="o">=</span> <span class="n">table</span><span class="p">.</span><span class="n">keys</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">sort</span><span class="p">)</span>
@@ -5454,7 +5589,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>t</code> (table): The table to get keys for.</li>
-<li><code>sort</code> (boolean, function, nil): If true, the returned table will be sorted. If a function is passed, the table will be sorted using the given function.</li>
+<li><code>sort</code> (boolean, function, nil): <em>Optional</em>. If true, the returned table will be sorted. If a function is passed, the table will be sorted using the given function.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5510,7 +5645,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>t</code> (table): A table to transverse.</li>
-<li><code>k</code> (unknown): The key of a table inside t object.</li>
+<li><code>k</code> (unknown): <em>Default</em>: <code>children</code>. The key of a table inside t object.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5534,7 +5669,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>t</code> (table): The table to get values for.</li>
-<li><code>sort</code> (boolean, function, nil): If true, the returned table will be sorted. If a function is passed, the table will be sorted using the given function.</li>
+<li><code>sort</code> (boolean, function, nil): <em>Optional</em>. If true, the returned table will be sorted. If a function is passed, the table will be sorted using the given function.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5616,10 +5751,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>

@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../event/" class="md-tabs__link md-tabs__link--active">
+      <a href="../dofile/" class="md-tabs__link md-tabs__link--active">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1185,8 +1197,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../event/" class="md-nav__link">
         event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../include/" class="md-nav__link">
+        include
       </a>
     </li>
   
@@ -1374,6 +1410,13 @@
           <li class="md-nav__item">
   <a href="#mwseloadconfig" class="md-nav__link">
     mwse.loadConfig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mwseloadtranslations" class="md-nav__link">
+    mwse.loadTranslations
   </a>
   
 </li>
@@ -1583,6 +1626,18 @@
     <li class="md-nav__item">
       <a href="../../types/lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2613,6 +2668,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -3105,6 +3172,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3299,6 +3378,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3515,6 +3606,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -4935,6 +5038,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5267,6 +5382,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#mwseloadtranslations" class="md-nav__link">
+    mwse.loadTranslations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mwselog" class="md-nav__link">
     mwse.log
   </a>
@@ -5387,11 +5509,24 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>fileName</code> (string): The non-extensioned name of the config file.</li>
-<li><code>defaults</code> (table): A table of default values.</li>
+<li><code>defaults</code> (table): <em>Optional</em>. A table of default values.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (table)</li>
+</ul>
+<hr />
+<h3 id="mwseloadtranslations"><code>mwse.loadTranslations</code><a class="headerlink" href="#mwseloadtranslations" title="Permanent link">⚓︎</a></h3>
+<p>Loads translations from the i18n folder for a given mod. This is locale-aware, using the result from <code>tes3.getLanguage()</code>. See the <a href="mod translations guide">http://127.0.0.1:8000/guides/mod-translations/</a> for more information.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">i18n</span> <span class="o">=</span> <span class="n">mwse</span><span class="p">.</span><span class="n">loadTranslations</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li><code>mod</code> (string): Name of the folder that your main.lua mod can be found in.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><code>i18n</code> (function): The callable translation results.</li>
 </ul>
 <hr />
 <h3 id="mwselog"><code>mwse.log</code><a class="headerlink" href="#mwselog" title="Permanent link">⚓︎</a></h3>
@@ -5402,7 +5537,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>message</code> (string)</li>
-<li><code>formatValues</code> (variadic)</li>
+<li><code>formatValues</code> (variadic): <em>Optional</em>.</li>
 </ul>
 <hr />
 <h3 id="mwselongtostring"><code>mwse.longToString</code><a class="headerlink" href="#mwselongtostring" title="Permanent link">⚓︎</a></h3>
@@ -5440,7 +5575,7 @@
 <ul>
 <li><code>fileName</code> (string)</li>
 <li><code>object</code> (unknown)</li>
-<li><code>config</code> (table)</li>
+<li><code>config</code> (table): <em>Optional</em>.</li>
 </ul>
 <p><strong>Returns</strong>:</p>
 <ul>
@@ -5535,10 +5670,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>

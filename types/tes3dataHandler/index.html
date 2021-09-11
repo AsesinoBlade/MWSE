@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -246,7 +246,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../apis/event/" class="md-tabs__link">
+      <a href="../../apis/dofile/" class="md-tabs__link">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1183,8 +1195,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../../apis/dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../apis/event/" class="md-nav__link">
         event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apis/include/" class="md-nav__link">
+        include
       </a>
     </li>
   
@@ -1433,6 +1469,18 @@
     <li class="md-nav__item">
       <a href="../lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2642,6 +2690,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -3134,6 +3194,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3328,6 +3400,18 @@
     <li class="md-nav__item">
       <a href="../tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3544,6 +3628,18 @@
     <li class="md-nav__item">
       <a href="../tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -4964,6 +5060,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5381,42 +5489,42 @@
 <p>A core game object used for storing both active and non-dynamic gameplay data.</p>
 <h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">⚓︎</a></h2>
 <h3 id="backgroundthread"><code>backgroundThread</code><a class="headerlink" href="#backgroundthread" title="Permanent link">⚓︎</a></h3>
-<p>A Windows handle to the background processing thread.</p>
+<p><em>Read-only</em>. A Windows handle to the background processing thread.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="backgroundthreadid"><code>backgroundThreadId</code><a class="headerlink" href="#backgroundthreadid" title="Permanent link">⚓︎</a></h3>
-<p>The thread ID for the background processing thread.</p>
+<p><em>Read-only</em>. The thread ID for the background processing thread.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="backgroundthreadrunning"><code>backgroundThreadRunning</code><a class="headerlink" href="#backgroundthreadrunning" title="Permanent link">⚓︎</a></h3>
-<p>Access to the running state for the background processing thread.</p>
+<p><em>Read-only</em>. Access to the running state for the background processing thread.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (boolean)</li>
 </ul>
 <hr />
 <h3 id="cellchanged"><code>cellChanged</code><a class="headerlink" href="#cellchanged" title="Permanent link">⚓︎</a></h3>
-<p>A flag set for the frame that the player has changed cells.</p>
+<p><em>Read-only</em>. A flag set for the frame that the player has changed cells.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (boolean)</li>
 </ul>
 <hr />
 <h3 id="centralgridx"><code>centralGridX</code><a class="headerlink" href="#centralgridx" title="Permanent link">⚓︎</a></h3>
-<p>The position of the origin horizontal grid coordinate.</p>
+<p><em>Read-only</em>. The position of the origin horizontal grid coordinate.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (boolean)</li>
 </ul>
 <hr />
 <h3 id="centralgridy"><code>centralGridY</code><a class="headerlink" href="#centralgridy" title="Permanent link">⚓︎</a></h3>
-<p>The position of the origin longitudinal grid coordinate.</p>
+<p><em>Read-only</em>. The position of the origin longitudinal grid coordinate.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (boolean)</li>
@@ -5430,56 +5538,56 @@
 </ul>
 <hr />
 <h3 id="currentcell"><code>currentCell</code><a class="headerlink" href="#currentcell" title="Permanent link">⚓︎</a></h3>
-<p>Access to the cell that the player is currently in.</p>
+<p><em>Read-only</em>. Access to the cell that the player is currently in.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (<a href="../../types/tes3cell">tes3cell</a>)</li>
 </ul>
 <hr />
 <h3 id="currentinteriorcell"><code>currentInteriorCell</code><a class="headerlink" href="#currentinteriorcell" title="Permanent link">⚓︎</a></h3>
-<p>Access to the current interior cell, if the player is in an interior.</p>
+<p><em>Read-only</em>. Access to the current interior cell, if the player is in an interior.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (<a href="../../types/tes3cell">tes3cell</a>)</li>
 </ul>
 <hr />
 <h3 id="exteriorcells"><code>exteriorCells</code><a class="headerlink" href="#exteriorcells" title="Permanent link">⚓︎</a></h3>
-<p>A table of nine tes3cellExteriorData objects for any loaded exterior cells.</p>
+<p><em>Read-only</em>. A table of nine tes3cellExteriorData objects for any loaded exterior cells.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (table)</li>
 </ul>
 <hr />
 <h3 id="lastexteriorcell"><code>lastExteriorCell</code><a class="headerlink" href="#lastexteriorcell" title="Permanent link">⚓︎</a></h3>
-<p>Access to the last visited exterior cell.</p>
+<p><em>Read-only</em>. Access to the last visited exterior cell.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (<a href="../../types/tes3cell">tes3cell</a>)</li>
 </ul>
 <hr />
 <h3 id="mainthread"><code>mainThread</code><a class="headerlink" href="#mainthread" title="Permanent link">⚓︎</a></h3>
-<p>A Windows handle to the main execution thread.</p>
+<p><em>Read-only</em>. A Windows handle to the main execution thread.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="mainthreadid"><code>mainThreadId</code><a class="headerlink" href="#mainthreadid" title="Permanent link">⚓︎</a></h3>
-<p>The thread ID for the main execution thread.</p>
+<p><em>Read-only</em>. The thread ID for the main execution thread.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
 </ul>
 <hr />
 <h3 id="nondynamicdata"><code>nonDynamicData</code><a class="headerlink" href="#nondynamicdata" title="Permanent link">⚓︎</a></h3>
-<p>A child structure where core game objects are held.</p>
+<p><em>Read-only</em>. A child structure where core game objects are held.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (<a href="../../types/tes3nonDynamicData">tes3nonDynamicData</a>)</li>
 </ul>
 <hr />
 <h3 id="threadsleeptime"><code>threadSleepTime</code><a class="headerlink" href="#threadsleeptime" title="Permanent link">⚓︎</a></h3>
-<p>No description yet available.</p>
+<p><em>Read-only</em>. No description yet available.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (number)</li>
@@ -5493,21 +5601,21 @@
 </ul>
 <hr />
 <h3 id="worldlandscaperoot"><code>worldLandscapeRoot</code><a class="headerlink" href="#worldlandscaperoot" title="Permanent link">⚓︎</a></h3>
-<p>One of the core parent scene graph nodes.</p>
+<p><em>Read-only</em>. One of the core parent scene graph nodes.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (<a href="../../types/niNode">niNode</a>)</li>
 </ul>
 <hr />
 <h3 id="worldobjectroot"><code>worldObjectRoot</code><a class="headerlink" href="#worldobjectroot" title="Permanent link">⚓︎</a></h3>
-<p>One of the core parent scene graph nodes.</p>
+<p><em>Read-only</em>. One of the core parent scene graph nodes.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (<a href="../../types/niNode">niNode</a>)</li>
 </ul>
 <hr />
 <h3 id="worldpickobjectroot"><code>worldPickObjectRoot</code><a class="headerlink" href="#worldpickobjectroot" title="Permanent link">⚓︎</a></h3>
-<p>One of the core parent scene graph nodes.</p>
+<p><em>Read-only</em>. One of the core parent scene graph nodes.</p>
 <p><strong>Returns</strong>:</p>
 <ul>
 <li><code>result</code> (<a href="../../types/niNode">niNode</a>)</li>
@@ -5588,10 +5696,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>

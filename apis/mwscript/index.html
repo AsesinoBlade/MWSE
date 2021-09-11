@@ -10,7 +10,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
@@ -18,7 +18,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.802231af.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../event/" class="md-tabs__link md-tabs__link--active">
+      <a href="../dofile/" class="md-tabs__link md-tabs__link--active">
         APIs
       </a>
     </li>
@@ -436,6 +436,18 @@
     <li class="md-nav__item">
       <a href="../../guides/mod-config/" class="md-nav__link">
         Mod Configuration Menu
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guides/mod-translations/" class="md-nav__link">
+        Mod Translations
       </a>
     </li>
   
@@ -1185,8 +1197,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../dofile/" class="md-nav__link">
+        dofile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../event/" class="md-nav__link">
         event
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../include/" class="md-nav__link">
+        include
       </a>
     </li>
   
@@ -1752,6 +1788,18 @@
     <li class="md-nav__item">
       <a href="../../types/lfsLock/" class="md-nav__link">
         lfsLock
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/mwseLuaExecutor/" class="md-nav__link">
+        mwseLuaExecutor
       </a>
     </li>
   
@@ -2782,6 +2830,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3inventoryTile/" class="md-nav__link">
+        tes3inventoryTile
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3item/" class="md-nav__link">
         tes3item
       </a>
@@ -3274,6 +3334,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../types/tes3rechargingItem/" class="md-nav__link">
+        tes3rechargingItem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../types/tes3reference/" class="md-nav__link">
         tes3reference
       </a>
@@ -3468,6 +3540,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3uiElement/" class="md-nav__link">
         tes3uiElement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3uiEventData/" class="md-nav__link">
+        tes3uiEventData
       </a>
     </li>
   
@@ -3684,6 +3768,18 @@
     <li class="md-nav__item">
       <a href="../../types/tes3weatherThunder/" class="md-nav__link">
         tes3weatherThunder
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/tes3worldController/" class="md-nav__link">
+        tes3worldController
       </a>
     </li>
   
@@ -5104,6 +5200,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../events/spellMagickaUse/" class="md-nav__link">
+        spellMagickaUse
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../events/spellResist/" class="md-nav__link">
         spellResist
       </a>
@@ -5658,6 +5766,10 @@
                 
                 
                 <h1 id="mwscript">mwscript<a class="headerlink" href="#mwscript" title="Permanent link">⚓︎</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This API is deprecated. See below for more information about what to use instead.</p>
+</div>
 <p>The mwscript library allows vanilla mwscript functions to be called. This is not always ideal, and this library is deprecated. Avoid using it if at all possible.</p>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
 <h3 id="mwscriptactivate"><code>mwscript.activate</code><a class="headerlink" href="#mwscriptactivate" title="Permanent link">⚓︎</a></h3>
@@ -5667,7 +5779,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 </ul>
 </li>
 </ul>
@@ -5679,9 +5791,9 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>item</code> (<a href="../../types/tes3item">tes3item</a>, string): The item to be added.</li>
-<li><code>count</code> (number): The number of items to be added.</li>
+<li><code>count</code> (number): <em>Default</em>: <code>1</code>. The number of items to be added.</li>
 </ul>
 </li>
 </ul>
@@ -5697,7 +5809,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>creature</code> (<a href="../../types/tes3creature">tes3creature</a>, string): The creature to be stored in the soul gem.</li>
 <li><code>soulgem</code> (<a href="../../types/tes3misc">tes3misc</a>, string): The soul gem to store the soul in.</li>
 </ul>
@@ -5715,7 +5827,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>spell</code> (<a href="../../types/tes3spell">tes3spell</a>, string)</li>
 </ul>
 </li>
@@ -5734,7 +5846,7 @@
 <li><code>params</code> (table)<ul>
 <li><code>list</code> (<a href="../../types/tes3leveledCreature">tes3leveledCreature</a>, string): Leveled creature list to add a creature to.</li>
 <li><code>creature</code> (<a href="../../types/tes3actor">tes3actor</a>, string): Creature to add to the list.</li>
-<li><code>level</code> (number): Minimum level for the creature to spawn.</li>
+<li><code>level</code> (number): <em>Default</em>: <code>0</code>. Minimum level for the creature to spawn.</li>
 </ul>
 </li>
 </ul>
@@ -5752,7 +5864,7 @@
 <li><code>params</code> (table)<ul>
 <li><code>list</code> (<a href="../../types/tes3leveledItem">tes3leveledItem</a>, string): Leveled item list to add a creature to.</li>
 <li><code>item</code> (<a href="../../types/tes3item">tes3item</a>, string): Item to add to the list.</li>
-<li><code>level</code> (number): Minimum level for the item to spawn.</li>
+<li><code>level</code> (number): <em>Default</em>: <code>0</code>. Minimum level for the item to spawn.</li>
 </ul>
 </li>
 </ul>
@@ -5784,7 +5896,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>x</code> (number)</li>
 <li><code>y</code> (number)</li>
 <li><code>z</code> (number)</li>
@@ -5803,8 +5915,8 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
-<li><code>modify</code> (boolean): Set the object as modified.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>modify</code> (boolean): <em>Default</em>: <code>true</code>. Set the object as modified.</li>
 </ul>
 </li>
 </ul>
@@ -5820,9 +5932,9 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>item</code> (<a href="../../types/tes3item">tes3item</a>, string): The item to be dropped.</li>
-<li><code>count</code> (number): The number of items to drop.</li>
+<li><code>count</code> (number): <em>Default</em>: <code>1</code>. The number of items to drop.</li>
 </ul>
 </li>
 </ul>
@@ -5838,8 +5950,8 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
-<li><code>modify</code> (boolean): Set the object as modified.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>modify</code> (boolean): <em>Default</em>: <code>true</code>. Set the object as modified.</li>
 </ul>
 </li>
 </ul>
@@ -5855,7 +5967,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>item</code> (<a href="../../types/tes3item">tes3item</a>, string): The item to be equipped.</li>
 </ul>
 </li>
@@ -5872,7 +5984,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>spell</code> (<a href="../../types/tes3spell">tes3spell</a>, string)</li>
 </ul>
 </li>
@@ -5898,7 +6010,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>target</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): Actor to check detection for.</li>
 </ul>
 </li>
@@ -5915,7 +6027,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 </ul>
 </li>
 </ul>
@@ -5931,7 +6043,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>target</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): Actor to check distance to.</li>
 </ul>
 </li>
@@ -5942,13 +6054,13 @@
 </ul>
 <hr />
 <h3 id="mwscriptgetitemcount"><code>mwscript.getItemCount</code><a class="headerlink" href="#mwscriptgetitemcount" title="Permanent link">⚓︎</a></h3>
-<p>Wrapper for the GetItemCount mwscript function.</p>
+<p>Use <code>tes3.getItemCount</code> instead. Wrapper for the <code>GetItemCount</code> mwscript function.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">result</span> <span class="o">=</span> <span class="n">mwscript</span><span class="p">.</span><span class="n">getItemCount</span><span class="p">({</span> <span class="n">reference</span> <span class="o">=</span> <span class="p">...,</span> <span class="n">item</span> <span class="o">=</span> <span class="p">...</span> <span class="p">})</span>
 </code></pre></div>
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>item</code> (<a href="../../types/tes3item">tes3item</a>, string)</li>
 </ul>
 </li>
@@ -6010,7 +6122,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>spell</code> (<a href="../../types/tes3spell">tes3spell</a>, string)</li>
 </ul>
 </li>
@@ -6027,7 +6139,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>item</code> (<a href="../../types/tes3item">tes3item</a>, string): The item to be added.</li>
 </ul>
 </li>
@@ -6044,11 +6156,11 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>object</code> (<a href="../../types/tes3object">tes3object</a>, string): The object to place.</li>
-<li><code>count</code> (number)</li>
-<li><code>distance</code> (number)</li>
-<li><code>direction</code> (number)</li>
+<li><code>count</code> (number): <em>Default</em>: <code>1</code>.</li>
+<li><code>distance</code> (number): <em>Default</em>: <code>256</code>.</li>
+<li><code>direction</code> (number): <em>Default</em>: <code>1</code>.</li>
 </ul>
 </li>
 </ul>
@@ -6064,7 +6176,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>sound</code> (<a href="../../types/tes3sound">tes3sound</a>, string)</li>
 </ul>
 </li>
@@ -6081,12 +6193,12 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>cell</code> (string)</li>
-<li><code>x</code> (number)</li>
-<li><code>y</code> (number)</li>
-<li><code>z</code> (number)</li>
-<li><code>rotation</code> (number)</li>
+<li><code>x</code> (number): <em>Default</em>: <code>0</code>.</li>
+<li><code>y</code> (number): <em>Default</em>: <code>0</code>.</li>
+<li><code>z</code> (number): <em>Default</em>: <code>0</code>.</li>
+<li><code>rotation</code> (number): <em>Default</em>: <code>0</code>.</li>
 </ul>
 </li>
 </ul>
@@ -6102,12 +6214,12 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>cell</code> (string)</li>
-<li><code>x</code> (number)</li>
-<li><code>y</code> (number)</li>
-<li><code>z</code> (number)</li>
-<li><code>rotation</code> (number)</li>
+<li><code>x</code> (number): <em>Default</em>: <code>0</code>.</li>
+<li><code>y</code> (number): <em>Default</em>: <code>0</code>.</li>
+<li><code>z</code> (number): <em>Default</em>: <code>0</code>.</li>
+<li><code>rotation</code> (number): <em>Default</em>: <code>0</code>.</li>
 </ul>
 </li>
 </ul>
@@ -6123,9 +6235,9 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>item</code> (<a href="../../types/tes3item">tes3item</a>, string): The item to be added.</li>
-<li><code>count</code> (number): The number of items to be added.</li>
+<li><code>count</code> (number): <em>Default</em>: <code>1</code>. The number of items to be added.</li>
 </ul>
 </li>
 </ul>
@@ -6141,7 +6253,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>spell</code> (<a href="../../types/tes3spell">tes3spell</a>, string)</li>
 </ul>
 </li>
@@ -6174,7 +6286,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>level</code> (number)</li>
 </ul>
 </li>
@@ -6191,7 +6303,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>target</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): Actor to start combat with.</li>
 </ul>
 </li>
@@ -6208,7 +6320,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>script</code> (tes3script, string)</li>
 </ul>
 </li>
@@ -6225,7 +6337,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>target</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): Actor to stop combat with.</li>
 </ul>
 </li>
@@ -6242,7 +6354,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>script</code> (tes3script, string)</li>
 </ul>
 </li>
@@ -6259,7 +6371,7 @@
 <p><strong>Parameters</strong>:</p>
 <ul>
 <li><code>params</code> (table)<ul>
-<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
+<li><code>reference</code> (<a href="../../types/tes3reference">tes3reference</a>, <a href="../../types/tes3mobileActor">tes3mobileActor</a>, string): <em>Optional</em>. The target reference for this command to be executed on. Defaults to the normal script execution reference.</li>
 <li><code>sound</code> (<a href="../../types/tes3sound">tes3sound</a>, string)</li>
 </ul>
 </li>
@@ -6349,10 +6461,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.756773cc.min.js"></script>
       
     
   </body>
